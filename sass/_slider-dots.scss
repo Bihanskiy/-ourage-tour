@@ -1,0 +1,27 @@
+.owl-dots button {
+    outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 0 5px;
+}
+
+.owl-dots {
+    position: absolute;
+    left: 390px;
+    top: 670px;
+    @media (max-width: 1700px) {
+        left: 280px;
+    }
+    @media (max-width: 1400px) {
+        left: 140px;
+    }
+    @media (max-width: 650px) {
+        top: 450px;
+    }
+}
+
+.owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: $orange!important;
+}

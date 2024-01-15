@@ -1,0 +1,109 @@
+/** @format */
+
+.header {
+  height: 737px;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 650px) {
+    height: 500px;
+  }
+  &-slider {
+    img {
+      width: auto;
+      height: 100%;
+    }
+    &_wrapper {
+      width: 100%;
+      height: 737px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: rgb(92, 111, 218);
+      @media (max-width: 650px) {
+        height: 500px;
+      }
+    }
+    &_item1 {
+      @include slide-item();
+    }
+    &_item2 {
+      @include slide-item();
+    }
+    &_item3 {
+      @include slide-item();
+    }
+    &_item4 {
+      @include slide-item();
+    }
+    &_item5 {
+      @include slide-item();
+    }
+  }
+  &-cta {
+    position: absolute;
+    left: 0;
+    z-index: 20;
+    bottom: 140px;
+    width: 1352px;
+    height: 228px;
+    background-color: rgba(0, 76, 132, 0.49);
+    @media (max-width: 1380px) {
+      width: 62.5rem;
+    }
+    @media (max-width: 650px) {
+      width: 44rem;
+      bottom: 100px;
+    }
+    @media (max-width: 450px) {
+      width: 300px;
+    }
+    h1 {
+      color: #ffffff;
+      font-family: 'Arial Bold';
+      font-size: 1.875rem;
+      font-weight: 400;
+      line-height: 1.875rem;
+      opacity: 1;
+      margin: 65px 0px 30px 380px;
+      @media (max-width: 1380px) {
+        margin: 65px 0 30px 23.75rem;
+      }
+      @media (max-width: 1200px) {
+        margin-left: 10px;
+      }
+      @media (max-width: 450px) {
+        width: 290px;
+      }
+    }
+    &_btn {
+      margin-left: 380px;
+      @media (max-width: 1200px) {
+        margin-left: 10px;
+      }
+      a {
+        display: block;
+        color: #000000;
+        font-family: 'Arial Regular';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        width: 254px;
+        height: 48px;
+        border-radius: 10px;
+        background-color: $orange;
+        text-align: center;
+        line-height: 2.5;
+        text-decoration: none;
+        &:hover {
+          background-color: lighten($orange, 5%);
+        }
+        &:active {
+          background-color: darken($orange, 5%);
+        }
+      }
+    }
+  }
+}
+
+@import '_slider-dots.scss';

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Arial Regular';
+    src: url('../fonts/ArialMT.eot');
+    src: url('../fonts/ArialMT.eot?#iefix') format('embedded-opentype'), url('../fonts/ArialMT.woff') format('woff'), url('../fonts/ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial Bold';
+    src: url('../fonts/Arial-BoldMT.eot');
+    src: url('../fonts/Arial-BoldMT.eot?#iefix') format('embedded-opentype'), url('../fonts/Arial-BoldMT.woff') format('woff'), url('../fonts/Arial-BoldMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Arial Regular';
+    @media (max-width: 1200px) {
+        font-size: 14px;
+    }
+    @media (max-width: 992px) {
+        font-size: 12px;
+    }
+    @media (max-width: 768px) {
+        font-size: 10px;
+    }
+}
+
+body {
+    // position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.lazy {
+    display: block;
+}
